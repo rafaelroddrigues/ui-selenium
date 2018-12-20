@@ -2,6 +2,7 @@ package org.cucumber.run;
 
 import cucumber.api.CucumberOptions;
 import cucumber.api.junit.Cucumber;
+import org.cucumber.base.BaseStep;
 import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
@@ -9,5 +10,5 @@ import org.junit.runner.RunWith;
         features = "src/test/resources/org/cucumber/features",
         glue = "org/cucumber/search",
         plugin = {"pretty"})
-public class RunCucumberTest {
+public class RunCucumberTest extends BaseStep {
 }

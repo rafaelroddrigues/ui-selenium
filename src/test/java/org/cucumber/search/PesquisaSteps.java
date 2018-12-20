@@ -1,6 +1,5 @@
 package org.cucumber.search;
 
-import org.cucumber.base.BaseStep;
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
@@ -10,7 +9,7 @@ import page.search.SearchPage;
 
 import static org.junit.Assert.assertEquals;
 
-public class PesquisaSteps extends BaseStep {
+public class PesquisaSteps {
 
     @Given("^that I have gone to the Google page$")
     public void I_have_gone_to_the_Google_page() {
