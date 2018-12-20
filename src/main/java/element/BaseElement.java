@@ -6,8 +6,7 @@ import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-import static espera.Espera.esperaElementoAparecer;
-import static espera.Espera.esperaElementoSumir;
+import static utils.Espera.esperaElementoAparecer;
 
 public abstract class BaseElement {
 
@@ -22,7 +21,6 @@ public abstract class BaseElement {
     protected WebElement getElement() {
         try {
             esperaElementoAparecer(seletor);
-            //esperaElementoSumir("");
 
             if(seletor.contains("//*")){
                 element = driver.findElement(By.xpath(seletor));

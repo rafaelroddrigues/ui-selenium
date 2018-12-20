@@ -1,3 +1,7 @@
-### UI Selenium
+### Desafio Técnico e-Core
 
-Exemplo de testes de Interface usando [Selenium](https://www.seleniumhq.org/) com JUnit.
+Automação de casos de teste utilizando [Selenium](https://www.seleniumhq.org/) e [TestNG](https://testng.org/doc/index.html).
+
+## Author
+
+* **Rafael Rodrigues**

@@ -2,8 +2,11 @@ package page;
 
 import browser.Chrome;
 import org.openqa.selenium.chrome.ChromeDriver;
+import utils.Espera;
 
-import static espera.Espera.esperaSpinBarSumir;
+import java.util.Set;
+
+import static utils.Espera.waitForNumberOfWindowsToEqual;
 
 public abstract class Page {
 
@@ -15,10 +18,7 @@ public abstract class Page {
 
     public abstract String getUrl();
 
-    public abstract String getName();
-
     public boolean textExists(String text) {
-        //esperaSpinBarSumir();
 
         try {
             Thread.sleep(4000L);
@@ -27,5 +27,22 @@ public abstract class Page {
         }
 
         return driver.getPageSource().contains(text);
+    }
+
+    public void goToNextWindow() {
+        String firstWindow = driver.getWindowHandle();
+        String newWindow = "";
+
+        waitForNumberOfWindowsToEqual(2);
+
+        Set<String> allWindows = driver.getWindowHandles();
+
+        for (String window : allWindows) {
+            if (!window.equals(firstWindow)) {
+                newWindow = window;
+            }
+        }
+
+        driver.switchTo().window(newWindow);
     }
 }
