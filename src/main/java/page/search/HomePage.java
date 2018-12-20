@@ -19,12 +19,8 @@ public class HomePage extends Page {
         return "Home Page - Search";
     }
 
-    public SearchPage pesquisar(String texto) {
-        goTo();
+    public void pesquisar(String texto) { pesquisarTextField.set(texto); }
 
-        pesquisarTextField.set(texto);
-        pesquisaGoogleButton.click();
+    public void click() { pesquisaGoogleButton.click(); }
 
-        return new SearchPage();
-    }
 }

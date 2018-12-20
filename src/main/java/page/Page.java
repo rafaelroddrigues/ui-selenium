@@ -3,8 +3,6 @@ package page;
 import browser.Chrome;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-import static espera.Espera.esperaSpinBarSumir;
-
 public abstract class Page {
 
     protected ChromeDriver driver = Chrome.getDriver();
@@ -18,7 +16,6 @@ public abstract class Page {
     public abstract String getName();
 
     public boolean textExists(String text) {
-        //esperaSpinBarSumir();
 
         try {
             Thread.sleep(4000L);

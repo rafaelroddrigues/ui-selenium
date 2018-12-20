@@ -12,10 +12,6 @@ public class Espera {
 
     private static long delay = 0L;
 
-    public static void esperaSpinBarSumir() {
-        esperaElementoSumir("");
-    }
-
     public static void esperaElementoSumir(String selector) {
         new FluentWait<>(Chrome.getDriver())
             .withTimeout(Duration.ofSeconds(40))

@@ -1,10 +1,10 @@
-package base;
+package org.cucumber.base;
 
 import browser.Chrome;
 import org.junit.After;
 import org.junit.AfterClass;
 
-public class BaseTest {
+public class BaseStep {
 
     @After
     public void tearDown() {
