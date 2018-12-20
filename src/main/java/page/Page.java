@@ -13,16 +13,4 @@ public abstract class Page {
 
     public abstract String getUrl();
 
-    public abstract String getName();
-
-    public boolean textExists(String text) {
-
-        try {
-            Thread.sleep(4000L);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
-
-        return driver.getPageSource().contains(text);
-    }
 }

@@ -14,11 +14,6 @@ public class HomePage extends Page {
         return "https://www.google.com/";
     }
 
-    @Override
-    public String getName() {
-        return "Home Page - Search";
-    }
-
     public void pesquisar(String texto) { pesquisarTextField.set(texto); }
 
     public void click() { pesquisaGoogleButton.click(); }

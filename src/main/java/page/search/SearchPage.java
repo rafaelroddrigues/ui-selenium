@@ -12,11 +12,6 @@ public class SearchPage extends Page {
         return null;
     }
 
-    @Override
-    public String getName() {
-        return "Search Page - Result";
-    }
-
     public String pegarTextoPrimeiroResultado() {
         return primeiroResultadoText.getText();
     }
