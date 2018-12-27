@@ -1,4 +1,4 @@
-package org.cucumber.search;
+package search;
 
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
@@ -16,7 +16,7 @@ public class PesquisaSteps {
         new HomePage().goTo();
     }
 
-    @When("I add {string} to the org.cucumber.base.search box")
+    @When("I add {string} to the base.search box")
     public void I_add_to_the_search_box(String text) {
         new HomePage().pesquisar(text);
     }

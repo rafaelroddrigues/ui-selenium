@@ -1,14 +1,14 @@
-package org.cucumber.run;
+package run;
 
 import cucumber.api.CucumberOptions;
 import cucumber.api.junit.Cucumber;
-import org.cucumber.base.BaseStep;
+import base.BaseStep;
 import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-        features = "src/test/resources/org/cucumber/features",
-        glue = "org/cucumber/search",
+        features = "src/test/resources/features",
+        glue = "search",
         plugin = {"pretty"})
 public class RunCucumberTest extends BaseStep {
 }

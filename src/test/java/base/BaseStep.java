@@ -1,7 +1,6 @@
-package org.cucumber.base;
+package base;
 
 import browser.Chrome;
-import org.junit.After;
 import org.junit.AfterClass;
 
 public class BaseStep {
