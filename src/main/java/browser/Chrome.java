@@ -15,12 +15,8 @@ public class Chrome {
         if (driver == null) {
             WebDriverManager.chromedriver().setup();
 
-            Map<String, String> mobileEmulation = new HashMap<>();
-            mobileEmulation.put("deviceName", "Nexus 5");
-
             ChromeOptions options = new ChromeOptions();
-            options.setExperimentalOption("mobileEmulation", mobileEmulation);
-            options.addArguments("window-size=360,728");
+            options.addArguments("--start-maximized");
 
             driver = new ChromeDriver(options);
         }
