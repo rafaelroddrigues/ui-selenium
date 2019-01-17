@@ -1,3 +1,7 @@
 ### UI Selenium
 
-Exemplo de testes de UI usando [Selenium](https://www.seleniumhq.org/).
+Automação de casos de teste utilizando [Selenium](https://www.seleniumhq.org/) e [JUnit](https://junit.org/junit4/).
+
+## Author
+
+* **Rafael Rodrigues**
