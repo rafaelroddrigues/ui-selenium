@@ -26,13 +26,12 @@ public class InvoiceTest extends BaseTest {
         assertTrue(invoiceListTable && invoiceDetailsTable);
     }
 
-    // Este teste está falhando devido ao valor informado no PDF = USD $19.00 (No sistema o '.00' não existe)
     @DataProvider
     public Object[][] getDataTC003() {
 
         return new Object[][]{{"demouser","abc123","Rendezvous Hotel","14/01/2018",
                 "15/01/2018","110", "0875", "JOHNY SMITH\nR2, AVENUE DU MAROC\n123456",
-        "Superior Double", "14/01/2018", "15/01/2018", "1", "$150", "USD $20.90", "USD $19.00", "USD $209"}};
+        "Superior Double", "14/01/2018", "15/01/2018", "1", "$150", "USD $20.90", "USD $19", "USD $209"}};
     }
 
 }

@@ -1,4 +1,4 @@
-### Desafio Técnico e-Core
+### UI Selenium
 
 Automação de casos de teste utilizando [Selenium](https://www.seleniumhq.org/) e [TestNG](https://testng.org/doc/index.html).
 

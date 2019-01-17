@@ -31,10 +31,9 @@ public class LoginTest extends BaseTest {
         return new Object[][]{{"demouser", "abc123"}};
     }
 
-    // Massa de dados duplicada para o usuário 'Demouser' e password 'abc123'
     @DataProvider
     public Object[][] getDataTC002() {
-        return new Object[][]{{"Demouser", "abc123"}, {"demouser_", "xyz"}, {"demouser", "nananana"}, {"Demouser", "abc123"}};
+        return new Object[][]{{"Demouser", "abc123"}, {"demouser_", "xyz"}, {"demouser", "nananana"}};
     }
 
 }
